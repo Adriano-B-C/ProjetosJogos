@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dimgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area {
+  display: block;
+  position: relative;
+  border: black solid 5px;
+  width: 80%;
+  height: 95vh;
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+
+.passaro {
+  position: absolute;
+  width: 35px;
+  height: 10%;
+  background-color: yellow;
+  bottom: 50%;
+  top: 280px;
+  left: 20%;
+}
+
+.celling {
+  position: absolute;
+  background: linear-gradient(#233d12, #4e7126, #77a63a);
+  width: 100%;
+  height: 18%;
+  border-bottom: 2px solid lightslategray;
+}
+
+.ground {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#77a63a, #4e7126, #233d12);
+  height: 18%;
+  border-top: 2px solid lightslategray;
+  bottom: 0px;
+}
+
+.espinhoUp {
+  position: absolute;
+  left: 90%;
+  top: 18%;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-top: 10vh solid #555;
+  /* height: 30px;
+  width: 30px;
+  background-color: #555;
+  transform: rotate(45deg); */
+}
+.espinhoDown {
+  position: absolute;
+  left: 90%;
+  bottom: 18%;
+  border-left: 5vh solid transparent;
+  border-right: 5vh solid transparent;
+  border-bottom: 10vh solid #555;
+}
+
+.colisaoUpX,
+.colisaoUpY,
+.colisaoDownX,
+.colisaoDownY {
+  position: absolute;
+  border: red solid 1px;
+}
+
+.colisaoUpX {
+  width: 6.7vh;
+  height: 5vh;
+  right: -3.4vh;
+  bottom: 5vh;
+}
+
+.colisaoUpY {
+  width: 3vh;
+  height: 5vh;
+  right: -1.5vh;
+  bottom: 0.5vh;
+}
+
+.colisaoDownX {
+  width: 6.7vh;
+  height: 5vh;
+  right: -3.4vh;
+  top: 5vh;
+}
+
+.colisaoDownY {
+  width: 3vh;
+  height: 5vh;
+  right: -1.5vh;
+  top: 0.5vh;
+}
+
+.pontos {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  font-size: larger;
+  color: aliceblue;
+}
